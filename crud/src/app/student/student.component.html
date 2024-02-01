@@ -1,0 +1,17 @@
+<div class="container mt-3">
+    <h2> Student Details</h2>
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">{{student.name}}</h5>
+            <p class="card-text">DOB:{{student.DOB}}</p>
+            <p class="card-text">Subject 1:{{student.subjects.sub1}}</p>
+            <p class="card-text">Subject 2:{{student.subjects.sub2}}</p>
+            <p class="card-text">Subject 3:{{student.subjects.sub3}}</p>
+            <p class="card-text">Subject 4:{{student.subjects.sub4}}</p>
+            <p class="card-text">Subject 5:{{student.subjects.sub5}}</p>
+            <button class="btn btn-warning" routerLink="/student-form/{{student.id}}">Edit Student</button>
+            <button class="btn btn-danger"(click)="deleteStudent()">Delete Student</button>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container mt-3">
+    <h2> Student List</h2>
+    <table class="table table-bordered">
+        <thread>
+            <tr>
+                <th> Student Name</th>
+                <th> DOB</th>
+                <th> Subject 1</th>
+                <th> Subject 2</th>
+                <th> Subject 3</th>
+                <th> Subject 4</th>
+                <th> Subject 5</th>
+            </tr>
+        </thread>
+        <tbody>
+            <tr *ngFor="le student of students">
+                <td (click)="navigatetoStudentDetails(student.id)">{{student.name}}</td>
+                <td>{{student.DOB}}</td>
+                <td>{{student.subjects.sub1}}</td>
+                <td>{{student.subjects.sub2}}</td>
+                <td>{{student.subjects.sub3}}</td>
+                <td>{{student.subjects.sub4}}</td>
+                <td>{{student.subjects.sub5}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,31 @@
+<div class="container mt-3">
+    <h2>{{ isNewStudent ? 'New Student':'Edit Student'}}</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" [(ngModel)]="student.name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="sub1">Subject 1 Marks:</label>
+            <input type="number" id="sub1"[(ngModel)]="student.subjects.sub1" name="sub1" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="sub2">Subject 2 Marks:</label>
+            <input type="number" id="sub2"[(ngModel)]="student.subjects.sub2" name="sub2" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="sub3">Subject 3 Marks:</label>
+            <input type="number" id="sub3"[(ngModel)]="student.subjects.sub3" name="sub3" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="sub4">Subject 4 Marks:</label>
+            <input type="number" id="sub4"[(ngModel)]="student.subjects.sub4" name="sub4" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="sub5">Subject 5 Marks:</label>
+            <input type="number" id="sub5"[(ngModel)]="student.subjects.sub5" name="sub5" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">{{ is isNewStudent ? 'Add Student':'Update Student'}}</button>
+
+    </form>
+</div>

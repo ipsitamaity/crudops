@@ -1,0 +1,22 @@
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.card{
+    margin-top:20px;
+}
+.card-title{
+    font-size: 1.5rem;
+}
+.card-text{
+    margin-bottom: 8px;
+}
+.card-subtitle{
+    margin-top: 16px;
+}
+.list-group-item{
+    background-color: #f8f9fa;
+}
+.btn{
+    margin-right: 8px;
+}

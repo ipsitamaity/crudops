@@ -1,0 +1,21 @@
+<div class="container mt-3">
+    <h2>Student Details</h2>
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">{{student.name}}</h5>
+            <p class="card-text">Date of Birth:{{student.DOB}}</p>
+            <h6 class="card-subtitle mb-2 text-muted"> Subjects and Marks:</h6>
+            <ul class="list-group">
+                <li class="list-group-item">Subject 1:{{student.subjects.sub1}}</li>
+                <li class="list-group-item">Subject 2:{{student.subjects.sub2}}</li>
+                <li class="list-group-item">Subject 3:{{student.subjects.sub3}}</li>
+                <li class="list-group-item">Subject 4:{{student.subjects.sub4}}</li>
+                <li class="list-group-item">Subject 5:{{student.subjects.sub5}}</li>
+            </ul>
+            <p class="card-text">Total Marks:{{calculateTotalMarks() }}</p>
+            <p class="card-text">Grade:{{calculateGrade() }}</p>
+            <button class="btn btn-warning" routerLink="/student-form/{{student.id}}">Edit Student</button>
+            <button class="btn btn-danger" (click)="deleteStudent()">Delete Student</button>
+        </div>
+    </div>
+</div>
